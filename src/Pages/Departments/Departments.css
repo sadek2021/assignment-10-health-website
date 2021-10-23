@@ -1,0 +1,22 @@
+.dept-banner{
+    position: relative;
+}
+.dept-banner::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background: url(https://ar-coder.com/demos/meddoctors/assets/images/header/04_header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:50% 0;
+    background-attachment: fixed;
+}
+.content{
+    position: relative;
+    padding: 200px 0;
+}

@@ -1,14 +1,15 @@
 import React from 'react';
+import logo from './../../Images/favicon/logo.png'
 import './Footer.css'
 
 const Footer = () => {
     return (
-        <div className="bg-image text-center py-5 ">
+        <div className=" footer bg-secondary p-4 align-items-center ">
             <div className="mb-4">
-                <img width="" src="https://demo.themeies.com/html/prolexe/assets/img/logo/logo.png" alt="" />
+                <img width="150" src={logo}className="mx-auto d-block" alt="" />
             </div>
             <div>
-                <p className="text-white m-0">Copyright © 2021 All rights reserved Prolex, Inc.</p>
+                <p className="text-white text-center m-0">Copyright © 2021 All rights reserved City Medicare Clinic.</p>
             </div>
         </div>
     );

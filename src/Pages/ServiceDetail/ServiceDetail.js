@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router';
+import image from './../../Images/medicare.png'
 import useAuth from '../../Hooks/useAuth/useAuth';
 
 const ServiceDetail = () => {
@@ -10,20 +11,20 @@ const ServiceDetail = () => {
     return (
         <div className="container">
             <div className="d-lg-flex align-items-center my-5">
+                <img className="img-fluid" src={data?.img} alt="" />
                 <div className="m-5">
-                    <h1 className=" fw-bold text-color">{data?.name}</h1>
+                    <h1 className=" fw-bold text-danger">{data?.name}</h1>
                     <p>{data?.detail}</p>
                 </div>
-                <img className="img-fluid" src={data?.img} alt="" />
             </div>
             <div className="d-lg-flex align-items-center my-5">
-                <img className="img-fluid" src="https://disin-react.hibootstrap.com/images/about1.jpg" alt="" />
                 <div className="m-5">
-                    <h1 className=" fw-bold"><span className="text-color">About</span> Our Hospital</h1>
+                    <h1 className=" fw-bold text-danger">City Medicare Clinic</h1>
                     <br />
-                    <h5>Our Patient are Our Priority, We Offer Quality Medical Services of Specialists. More details about our services below.</h5>
-                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+                    <h5>Our clinic is open Monday to Friday. Please visit the Location & Hours page for detailed information.</h5>
+                    <p>City Medical GP and Vaccination Clinic is located in the heart of the Melbourne CBD. We have been providing quality GP and vaccination services to CBD workers, students and visitors since we opened in 2012. We are currently accepting new patients.</p>
                 </div>
+                <img className="img-fluid" width="600" src={image} alt="" />
             </div>
         </div>
     );

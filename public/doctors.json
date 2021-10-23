@@ -1,50 +1,56 @@
 [
     {
         "id": 1,
-        "img": "https://demo.themeies.com/html/prolexe/assets/img/doctor/1.jpg",
-        "name": "Dr. Andrew Berton",
+        "img": "https://disin-react.hibootstrap.com/images/doctors/doctor1.jpg",
+        "name": "Neurosurgeon",
         "detail": "Outpatient Surgery"
     },
     {
         "id": 2,
-        "img": "https://demo.themeies.com/html/prolexe/assets/img/doctor/3.jpg",
-        "name": "Dr. Wahab Apple",
+        "img": "https://disin-react.hibootstrap.com/images/doctors/doctor2.jpg",
+        "name": "Dr. Addition Smith",
         "detail": "Heart Specialist"
     },
     {
         "id": 3,
-        "img": "https://demo.themeies.com/html/prolexe/assets/img/doctor/2.jpg",
-        "name": "Dr. Mackenize",
-        "detail": "Haematology"
+        "img": "https://disin-react.hibootstrap.com/images/doctors/doctor3.jpg",
+        "name": "Dr. Sarah Taylor",
+        "detail": "Dental Surgeon"
     },
     {
         "id": 4,
-        "img": "https://demo.themeies.com/html/prolexe/assets/img/doctor/4.jpg",
-        "name": "Denteal care",
+        "img": "https://disin-react.hibootstrap.com/images/doctors/doctor4.jpg",
+        "name": "Dr. Mac Smith",
         "detail": "Haematology"
     },
     {
         "id": 5,
-        "img": "https://demo.themeies.com/html/prolexe/assets/img/doctor/5.jpg",
-        "name": "Dr. Andrew Berton",
+        "img": "https://disin-react.hibootstrap.com/images/doctors/doctor5.jpg",
+        "name": "Dr. Alinson Backer",
         "detail": "Outpatient Surgery"
     },
     {
         "id": 6,
-        "img": "https://demo.themeies.com/html/prolexe/assets/img/doctor/6.jpg",
-        "name": "Dr. Wahab Apple",
-        "detail": "Heart Specialist"
+        "img": "https://disin-react.hibootstrap.com/images/doctors/doctor6.jpg",
+        "name": "Dr. Jas Macham",
+        "detail": "MBBS, M.D of Medicine"
     },
     {
         "id": 7,
-        "img": "https://demo.themeies.com/html/prolexe/assets/img/doctor/7.jpg",
-        "name": "Dr. Mackenize",
+        "img": "https://disin-react.hibootstrap.com/images/doctors/doctor9.jpg",
+        "name": "Dr. Luis Moris",
         "detail": "Haematology"
     },
     {
         "id": 8,
-        "img": "https://demo.themeies.com/html/prolexe/assets/img/doctor/8.jpg",
-        "name": "Dr. Mackenize",
-        "detail": "Haematology"
+        "img": "https://disin-react.hibootstrap.com/images/doctors/doctor8.jpg",
+        "name": "Dr. Shane Warne",
+        "detail": "Gynecology"
+    },
+    {
+        "id": 9,
+        "img": "https://templates.envytheme.com/fovia/default/assets/img/doctor/1.jpg",
+        "name": "Dr. Addison Smith",
+        "detail": "Cardiologists"
     }
 ]

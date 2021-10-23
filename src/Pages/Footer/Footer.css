@@ -1,6 +1,3 @@
-.bg-image {
-    background-image: url(../../Images/footer-pic.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 100px;
+.footer{
+    margin-top: 180px;
 }

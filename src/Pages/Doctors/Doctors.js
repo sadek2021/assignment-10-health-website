@@ -9,7 +9,7 @@ const Doctors = () => {
         <div>
             <div className="container">
                 <div className="mt-5 text-center">
-                    <h1><span className="text-color fw-bold">Meet Our Qualified</span> Doctors</h1>
+                    <h1 className="text-danger">Our Specialized Doctors</h1>
                     <p>Who Is Behind The Best Medical Service In Our Clinic?</p>
                 </div>
                 <div className="container my-5">

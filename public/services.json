@@ -1,39 +1,57 @@
 [
     {
         "id": 1,
-        "img": "https://demo.themeies.com/menova/assets/img/service/1.jpg",
-        "name": "Cardiac Surgery",
-        "detail": "Cardiovascular surgery, also referred to as cardiac surgery or heart surgery, describes any surgical procedure that involves the heart."
+        "img": "https://i.ibb.co/Prtx1JK/bermix-studio-y-WYi-NNK-t-OI-unsplash-1.jpg",
+        "name": "General Health Care",
+        "detail": "People with disabilities require health services for general health care needs like the rest of the population"
     },
     {
         "id": 2,
-        "img": "https://demo.themeies.com/menova/assets/img/service/2.jpg",
-        "name": "Dental Services",
-        "detail": "From family dentistry to specialty care like braces and dental implants, we offer a complete line of dental services to care for your overall oral health."
+        "img": "https://i.ibb.co/3zRPy1j/bermix-studio-y-WYi-NNK-t-OI-unsplash-2.jpg",
+        "name": "Dental Care",
+        "detail": "Family dentistry to specialty care like braces and dental implants, we offer a complete line of dental services to care for your oral health."
     },
     {
         "id": 3,
-        "img": "https://demo.themeies.com/menova/assets/img/service/3.jpg",
-        "name": "Health Check",
-        "detail": "Preventive Health Check-up; Screening Tests; Full body Check-up. Regular health check-up can find problems before they start."
+        "img": "https://i.ibb.co/Gcxf9z6/bermix-studio-y-WYi-NNK-t-OI-unsplash-3.jpg",
+        "name": "Screening",
+        "detail": "Screening, in medicine, is a strategy used to look for as-yet-unrecognised conditions or risk markers."
     },
     {
         "id": 4,
-        "img": "https://demo.themeies.com/menova/assets/img/service/4.jpg",
-        "name": "Psycho Therapy",
-        "detail": "Psychotherapy is a general term for treating mental health problems by talking with a psychiatrist, psychologist."
+        "img": "https://i.ibb.co/vJS32wG/bermix-studio-y-WYi-NNK-t-OI-unsplash-4.jpg",
+        "name": "Orthopedics",
+        "detail": "Orthopaedic surgery or orthopaedics, is the branch of surgery concerned with conditions involving the musculoskeletal system."
     },
     {
         "id": 5,
-        "img": "https://demo.themeies.com/menova/assets/img/service/5.jpg",
-        "name": "Ambulance Car",
-        "detail": "An ambulance is a medically equipped vehicle which transports patients to treatment facilities, such as hospitals."
+        "img": "https://i.ibb.co/RDSnLRp/bermix-studio-y-WYi-NNK-t-OI-unsplash-13.jpg",
+        "name": "Laboratory",
+        "detail": "A laboratory is a facility that provides controlled conditions in which scientific or technological research, experiments, and measurement."
     },
     {
         "id": 6,
-        "img": "https://demo.themeies.com/menova/assets/img/service/6.jpg",
-        "name": "Skin Care",
-        "detail": "Clean your face no more than twice a day, or just once, if you have dry skin and don't wear makeup."
+        "img": "https://i.ibb.co/TwYYGCz/bermix-studio-y-WYi-NNK-t-OI-unsplash-5.jpg",
+        "name": "Children Medical Care",
+        "detail": "When you donate to CMCF you support equal access to the best medical care available for infants and children around the world."
+    },
+    {
+        "id": 7,
+        "img": "https://i.ibb.co/gP1bpzY/bermix-studio-y-WYi-NNK-t-OI-unsplash-6.jpg",
+        "name": "Mother Care",
+        "detail": "As a notable specialist retailer with decades’ baby related, Mothercare is here to help parents and children create their life story."
+    },
+    {
+        "id": 8,
+        "img": "https://i.ibb.co/cDz2K2N/bermix-studio-y-WYi-NNK-t-OI-unsplash-7.jpg",
+        "name": "Physiotherapy",
+        "detail": "Physical therapy, also known as physiotherapy, is one of the health professions.It is provided by physical therapists who restore health"
+    },
+    {
+        "id": 9,
+        "img": "https://i.ibb.co/kSwwx02/bermix-studio-y-WYi-NNK-t-OI-unsplash-8.jpg",
+        "name": "Diagnosis",
+        "detail": "Medical diagnosis is the process of determining which disease or condition explains a person's symptoms and signs."
     }
     
 ]

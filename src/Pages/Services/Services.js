@@ -8,8 +8,8 @@ const Services = () => {
     return (
         <div className="container">
             <div className="mt-5 text-center">
-                <h1><span className="text-color fw-bold">Our Available</span> Services</h1>
-                <p>What Kind Ok The Service You Can Grt From Us.</p>
+                <h1 className="text-danger">Our Medical Services</h1>
+                <p>Medical Services is a leading provider of insourcing services throughout the <br /> United Kingdom. We have the ability to provide a full 7-day service.</p>
             </div>
             <div className="container my-5">
                 <Row xs={1} md={3} className="g-5 p-4">

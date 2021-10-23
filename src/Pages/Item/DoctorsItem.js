@@ -6,10 +6,10 @@ const DoctorsItem = (props) => {
     return (
         <div>
             <Col className="shadow-lg text-center">
-                <Card >
+                <Card>
                     <Card.Img variant="top" src={img} />
                     <Card.Body>
-                        <Card.Title>{name}</Card.Title>
+                        <Card.Title className="text-danger fw-bold">{name}</Card.Title>
                         <div>
                             <p>{detail}</p>
                         </div>

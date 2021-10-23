@@ -1,0 +1,8 @@
+.banner-2{
+    background: url(https://ar-coder.com/demos/meddoctors/assets/images/header/05_header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 150px 0;
+}

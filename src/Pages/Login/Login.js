@@ -1,8 +1,8 @@
 import React from 'react';
 import icon1 from '../../Images/icon/google-icon.png';
-import icon2 from '../../Images/icon/facebook-icon.png';
 import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth/useAuth';
+import './Login.css'
 
 const Login = () => {
     const { allContext } = useAuth();
@@ -13,7 +13,6 @@ const Login = () => {
         setError,
         setIsLoading,
         loginUsingGoogle,
-        loginUsingFacebook,
         handleLogin,
         error } = allContext;
 
@@ -27,70 +26,57 @@ const Login = () => {
         loginUsingGoogle()
             .then(result => {
                 setUser(result.user);
+                setError('');
                 history.push(redirect_url);
             })
             .catch(error => {
-                setError(error.massage);
+                setError(error.message);
             })
             .finally(() => setIsLoading(false));
     }
 
-    /* Facebook Login & Redirect */
-    const handleFacebookLogin = () => {
-        loginUsingFacebook()
-            .then(result => {
-                setUser(result.user);
-                history.push(redirect_url);
-            })
-            .catch(error => {
-                setError(error.massage);
-            })
-            .finally(() => setIsLoading(false));
-    }
 
-    /* Email+Password Login & Redirect */
+    /* Email Login & Redirect */
     const login = (e) => {
         e.preventDefault();
         handleLogin()
             .then(result => {
                 setUser(result.user);
+                setError('');
                 history.push(redirect_url);
             })
             .catch(error => {
-                setError(error.massage);
+                setError(error.message);
             })
             .finally(() => setIsLoading(false));
     }
     return (
-        <div className="container row mx-auto align-items-center g-4 mt-5">
-            <div className="col-md-7">
-                <img className="img-fluid" src="https://disin-react.hibootstrap.com/images/login-bg.jpg" alt="" />
-            </div>
-            <div className=" col-md-5">
-                <h1>Login Account</h1>
-                {/* On Submit */}
+        <div className="container mx-auto align-items-center g-4 mt-5">
+            <div className="w-50 mx-auto">
+                <h1 className="text-center text-danger">Login Account</h1>
+
+                {/* Submit */}
                 <form onSubmit={login} className="mt-5">
                     <div className="mb-3">
-                        <label htmlFor="validationDefault02" className="form-label">Email</label>
-                        {/* On Blur */}
+                        <label htmlFor="validationDefault02" className="form-label">Email:</label>
+
+                        {/* Blur */}
                         <input onBlur={getEmail} type="email" className="form-control" id="validationDefault02"
                             placeholder="Email" aria-label="Email"
                             autoComplete="email" required />
-                        <div className="text-danger">
-                            {error}
-                        </div>
                     </div>
                     <div className="mb-3">
-                        <label htmlFor="validationDefault03" className="form-label">Password</label>
-                        {/* On Blur */}
+                        <label htmlFor="validationDefault03" className="form-label">Password:</label>
+
+                        {/*  Blur */}
                         <input onBlur={getPassword} type="password" className="form-control" id="validationDefault03"
                             placeholder="Password"
                             autoComplete="current-password" aria-label="Password" required />
                         <div className="text-danger">
-                            {error}
+                            <p>{error}</p>
                         </div>
                     </div>
-                    <div className="col-12 mb-3">
+                    <div className="mb-3">
                         <div className="form-check">
                             <input className="form-check-input" type="checkbox" value="" id="invalidCheck2" />
                             <label className="form-check-label" htmlFor="invalidCheck2">
@@ -99,8 +85,8 @@ const Login = () => {
                         </div>
                     </div>
                     <h6>Don’t have an account? <Link to='/register'>Register</Link></h6>
-                    <div className="d-grid col-12 mt-3">
-                        <button className="btn btn-primary" type="submit">Login</button>
+                    <div className="d-grid mt-3">
+                        <button className="btn btn-outline-danger" type="submit">Login</button>
                     </div>
                 </form>
                 <div className="text-center mt-2">
@@ -109,10 +95,6 @@ const Login = () => {
                     {/* On Click */}
                     <button onClick={handleGoogleLogin} className="btn">
                         <img width="40px" src={icon1} alt="" />
-                    </button>
-                    {/* On Click */}
-                    <button onClick={handleFacebookLogin} className="btn">
-                        <img width="40px" src={icon2} alt="" />
                     </button>
                 </div>
             </div>

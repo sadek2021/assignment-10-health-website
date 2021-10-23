@@ -1,6 +1,32 @@
+.banner{
+    position: relative;
+}
+.banner:before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background: url(https://i.ibb.co/TcF3MCf/olga-kononenko-Xi4-XD2-APR-o-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:50% 0 ;
+    background-attachment: fixed;
+    
+}
+.content{
+    position: relative;
+    padding: 200px 0;
+}
+.title{
+    font-size: 50px;
+}
 .front-icon span {
     font-size: 30px;
-    color: #51B8F2;
+    color: #f25151;
     background-color: #E4F5FF;
     padding: 10px 20px;
     border-radius: 5px;
@@ -8,11 +34,11 @@
 
 .front-icon:hover span {
     color: white;
-    background-color: #51B8F2;
+    background-color: rgb(220, 53, 69);
     transition: all 0.3s ease-in-out 0s;
 }
 
 .front-icon:hover h3 {
-    color: #51B8F2;
+    color: rgb(220, 53, 69);
     transition: all 0.3s ease-in-out 0s;
 }

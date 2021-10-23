@@ -1,15 +1,15 @@
-# Welcome To Prolex
+# Welcome To City Medicare Clinic
 
-Our Live Website. [Prolex](https://city-medicare-clinic.web.app/).
+Our Live Website. [City Medicare Clinic](https://city-medicare-clinic.web.app/).
 
-### * A Warm Welcome To Our Hospital. Bringing The Future of Healthcare.
+### => We Offer Extensive Medical Services For Our Patients Recommend That You Use Officia.
 
-### * Our Patient are Our Priority, We Offer Quality Medical Services of Specialists. More details about our services below.
+### => The popular app allows users to ask its team of 35,000 active, U.S.-licensed doctors health-related for free.
 
-### * We Protect You & Your Family.
+### => Nurses comprise the largest component of most healthcare environments; but there is evidence of international shortages of qualified nurses.
 
-### * We provide Professional Doctors, Exclusive Blood Bank, Track your Progress, Emergency services, Over 20 years of experience, We have experienced Doctor's.
+### => Specialists are doctors who have advanced training and degrees in a particular branch of medicine, such as heart health or bone health.
 
-### * About Our Hospital
-Our Patient are Our Priority, We Offer Quality Medical Services of Specialists. More details about our services below. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+### * About Our Clinic
+City Medicare Clinic is located in the heart of the Melbourne CBD. We have been providing quality GP and vaccination services to CBD workers, students and visitors since we opened in 2012. We are currently accepting new patients.
 

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getAuth, signInWithPopup, GoogleAuthProvider, FacebookAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile, signOut, onAuthStateChanged } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile, signOut, onAuthStateChanged } from "firebase/auth";
 import firebaseInitialize from '../../Firebase/Firebase.init';
 
 firebaseInitialize();
@@ -16,7 +16,6 @@ const useFirebase = () => {
 
     /* Provider */
     const googleProvider = new GoogleAuthProvider();
-    const facebookProvider = new FacebookAuthProvider();
 
     /* Google Login/Register */
     const loginUsingGoogle = () => {
@@ -24,20 +23,16 @@ const useFirebase = () => {
         return signInWithPopup(auth, googleProvider);
     }
 
-    /* Facebook Login/Register */
-    const loginUsingFacebook = () => {
-        setIsLoading(true);
-        return signInWithPopup(auth, facebookProvider);
-    }
-
     /* Display Name/User Name */
     const setUserName = () => {
         updateProfile(auth.currentUser, {
             displayName: name
         })
-            .then(result => { })
+            .then(result => {
+                setError('');
+            })
             .catch(error => {
-                setError(error.massage);
+                setError(error.message);
             })
     }
 
@@ -88,7 +83,7 @@ const useFirebase = () => {
         return () => unsubscribed;
     }, [auth]);
 
-    return { user, error, isLoading, setError, setUser, setUserName, setIsLoading, loginUsingGoogle, loginUsingFacebook, getName, getEmail, getPassword, handleRegistration, handleLogin, logout }
+    return { user, error, isLoading, setError, setUser, setUserName, setIsLoading, loginUsingGoogle, getName, getEmail, getPassword, handleRegistration, handleLogin, logout }
 };
 
 export default useFirebase;

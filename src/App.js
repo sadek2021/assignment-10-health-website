@@ -19,40 +19,53 @@ function App() {
     <div>
       <AuthProvider>
         <BrowserRouter>
+        
           <Header></Header>
           <Switch>
+
             <Route exact path="/">
               <Home></Home>
             </Route>
+
             <Route path="/home">
               <Home></Home>
             </Route>
-            <PrivateRoute exact path="/services">
-              <Services></Services>
-            </PrivateRoute>
-            <PrivateRoute path="/departments">
-              <Departments></Departments>
-            </PrivateRoute>
-            <PrivateRoute path="/doctors">
-              <Doctors></Doctors>
-            </PrivateRoute>
+
             <Route path="/aboutUs">
               <AboutUs></AboutUs>
             </Route>
+
+            <PrivateRoute exact path="/services">
+              <Services></Services>
+            </PrivateRoute>
+
+            <PrivateRoute path="/departments">
+              <Departments></Departments>
+            </PrivateRoute>
+            
+            <PrivateRoute path="/doctors">
+              <Doctors></Doctors>
+            </PrivateRoute>
+
             <Route path="/login">
               <Login></Login>
             </Route>
+
             <Route path="/register">
               <Register></Register>
             </Route>
+
             <PrivateRoute path="/services/:serviceId">
               <ServiceDetail></ServiceDetail>
             </PrivateRoute>
+
             <Route path="*">
               <NotFound></NotFound>
             </Route>
+
           </Switch>
           <Footer></Footer>
+
         </BrowserRouter>
       </AuthProvider>
     </div>

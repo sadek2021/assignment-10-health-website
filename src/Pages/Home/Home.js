@@ -1,128 +1,93 @@
 import React from 'react';
-import { Carousel, Row } from 'react-bootstrap';
-import useDepartments from '../../Hooks/useDepartments/useDepartments';
+import { Row } from 'react-bootstrap';
 import useServices from '../../Hooks/useServices/useServices';
-import DepartmentItem from '../Item/DepartmentItem';
 import ServiceItem from '../Item/ServiceItem';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Home.css';
-import { faBriefcaseMedical, faTint, faHeartbeat, faAmbulance, faNotesMedical, faStethoscope } from '@fortawesome/free-solid-svg-icons';
+import { faAmbulance, faCommentMedical, faUserMd, faUserNurse, faHandHoldingUsd, faDoorOpen } from '@fortawesome/free-solid-svg-icons';
+import useDoctors from '../../Hooks/useDoctors/useDoctors';
+import DoctorsItem from '../Item/DoctorsItem';
 
 const Home = () => {
     const { services } = useServices();
-    const { departments } = useDepartments();
+    const servicesNew = services.slice(0, 6)
+    const [doctors] = useDoctors()
 
     /* Icon */
-    const briefcase = <FontAwesomeIcon icon={faBriefcaseMedical} />
-    const blood = <FontAwesomeIcon icon={faTint} />
-    const Ambulance = <FontAwesomeIcon icon={faAmbulance} />
-    const NotesMedical = <FontAwesomeIcon icon={faNotesMedical} />
-    const Heart = <FontAwesomeIcon icon={faHeartbeat} />
-    const Stethoscope = <FontAwesomeIcon icon={faStethoscope} />
+    const briefcase = <FontAwesomeIcon icon={faCommentMedical} />
+    const blood = <FontAwesomeIcon icon={faUserNurse} />
+    const Ambulance = <FontAwesomeIcon icon={faUserMd} />
+    const NotesMedical = <FontAwesomeIcon icon={faHandHoldingUsd} />
+    const Heart = <FontAwesomeIcon icon={faDoorOpen} />
+    const Stethoscope = <FontAwesomeIcon icon={faAmbulance} />
     return (
-        <div className="container">
-            <div className="my-5">
-                <Carousel variant="dark">
-                    <Carousel.Item interval={3000}>
-                        <div className="d-flex align-items-center">
-                            <img
-                                className="d-block w-50"
-                                src="https://demo.themeies.com/html/prolexe/assets/img/banner/1.jpg"
-                                alt="First slide"
-                            />
-                            <div className=" text-center p-5">
-                                <h3 className="fw-bold">Best Medical Center</h3>
-                                <p>"Medical Doctors perform health assessments and provide health and wellness advice to
-                                    patients."</p>
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item interval={3000}>
-                        <div className="d-flex align-items-center">
-                            <img
-                                className="d-block w-50"
-                                src="https://templates.hibootstrap.com/grin/default/assets/images/main-slides/slides-bg1.jpg"
-                                alt="Second slide"
-                            />
-                            <div className=" text-center p-5">
-                                <h3 className="fw-bold">Protect You & Your Family</h3>
-                                <p>"Medical Doctors perform diagnostic tests, prescribe medication and advice for health."</p>
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                    <Carousel.Item interval={3000}>
-                        <div className="d-flex align-items-center">
-                            <img
-                                className="d-block w-50"
-                                src="https://demo.themeies.com/html/prolexe/assets/img/banner/2.jpg"
-                                alt="Third slide"
-                            />
-                            <div className=" text-center p-5">
-                                <h3 className="fw-bold">We Care For Your Health</h3>
-                                <p>"Medical Doctors create treatment plans and provide health and wellness advice to
-                                    patients."</p>
-                            </div>
-                        </div>
-                    </Carousel.Item>
-                </Carousel>
-            </div>
-            <div className="my-5 text-center">
-                <h1 className="fw-bold">Our Available <span className="text-color">Services</span> </h1>
-                <p>What Kind Ok The Service You Can Get From Us.</p>
+        <div>
+            <div className="mb-5 banner">
+                <div className="content text-center">
+                    <h1 className="fw-bold text-danger">CITY MEDICARE CLINIC</h1>
+                    <h2>Exceptional quality professional health care services offered at affordable rates.</h2>
+                </div>
             </div>
             <div className="container">
-                <Row xs={1} md={3} className="g-5 mb-5 p-4">
-                    {
-                        services.map(service => <ServiceItem key={service.id} service={service}></ServiceItem>)
-                    }
-                </Row>
-            </div>
-            <div className="my-5 text-center">
-                <h1 className="fw-bold">Why <span className="text-color">Choose</span> Us?</h1>
-                <p>We Always Provide Best Services</p>
-            </div>
-            <div className="row row-cols-1 row-cols-lg-2 mx-auto">
-                <div className="col text-lg-end align-item-center front-icon">
-                    <span>{briefcase}</span>
-                    <h3 className="mt-1">Professional Doctors</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium dolor emque laudantium. nunc felis.</p>
+                <div className="my-5 text-center">
+                    <h1 className="fw-bold text-danger">Our Medical Services</h1>
+                    <p>Medical Services is a leading provider of insourcing services throughout the <br /> United Kingdom. We have the ability to provide a full 7-day service.</p>
                 </div>
-                <div className="col front-icon">
-                    <span>{blood}</span>
-                    <h3 className="mt-1">Exclusive Blood Bank</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium dolor emque laudantium. nunc felis.</p>
+                <div className="container">
+                    <Row xs={1} md={3} className="g-5 mb-5 p-4">
+                        {
+                            servicesNew.map(service => <ServiceItem key={service.id} service={service}></ServiceItem>)
+                        }
+                    </Row>
                 </div>
-                <div className="col text-lg-end front-icon">
-                    <span>{Ambulance}</span>
-                    <h3 className="mt-1">Track your Progress</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium dolor emque laudantium. nunc felis.</p>
+                <div className="my-5 text-center">
+                    <h1 className="fw-bold text-danger">Why Should You Choose Our Clinic?</h1>
+                    <p>We Offer Extensive Medical Services For Our Patients Recommend That You Use Officia.</p>
                 </div>
-                <div className="col front-icon">
-                    <span>{NotesMedical}</span>
-                    <h3 className="mt-1">Emergency services</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium dolor emque laudantium. nunc felis.</p>
+                <div className="row row-cols-1 row-cols-lg-2 mx-auto">
+                    <div className="col text-lg-end  front-icon">
+                        <span className="d-flex justify-content-center">{briefcase}</span>
+                        <h3 className="mt-1 text-center">Free Consultation</h3>
+                        <p className="text-center">The popular app allows users to ask its team of 35,000 active, U.S.-licensed doctors health-related for free.</p>
+                    </div>
+                    <div className="col front-icon">
+                        <span className="d-flex justify-content-center">{blood}</span>
+                        <h3 className="mt-1 text-center">Qualified Nurses</h3>
+                        <p className="text-center">Nurses comprise the largest component of most healthcare environments; but there is evidence of international shortages of qualified nurses.</p>
+                    </div>
+                    <div className="col text-lg-end front-icon">
+                        <span className="d-flex justify-content-center">{Ambulance}</span>
+                        <h3 className="mt-1 text-center">Professional Expert Doctors</h3>
+                        <p className="text-center">Specialists are doctors who have advanced training and degrees in a particular branch of medicine, such as heart health or bone health. Depending on the field, many can also perform surgery.</p>
+                    </div>
+                    <div className="col front-icon">
+                        <span className="d-flex justify-content-center">{NotesMedical}</span>
+                        <h3 className="mt-1 text-center">Affordable Price</h3>
+                        <p>Just as there are challenges to making health care more affordable, there are many opportunities to reduce costs without compromising care.</p>
+                    </div>
+                    <div className="col text-lg-end front-icon">
+                        <span className="d-flex justify-content-center">{Heart}</span>
+                        <h3 className="mt-1 text-center">24/7 Opened</h3>
+                        <p className="text-center">24X7 emergency services with 24 Hour emergency doctors available. Our 24 hour open emergency hospital near you is always ready.</p>
+                    </div>
+                    <div className="col front-icon">
+                        <span className="d-flex justify-content-center">{Stethoscope}</span>
+                        <h3 className="mt-1 text-center">Emergency services</h3>
+                        <p className="text-center">Emergency medical services (EMS), also known as ambulance services or paramedic services.</p>
+                    </div>
                 </div>
-                <div className="col text-lg-end front-icon">
-                    <span>{Heart}</span>
-                    <h3 className="mt-1">Over 20 years of experience</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium dolor emque laudantium. nunc felis.</p>
+                <div className="my-5 text-center">
+                    <h1 className="fw-bold text-danger">Our Specialized Doctors</h1>
+                    <p>A medical specialty is a branch of medical practice that is focused on a defined group of patients, <br /> diseases, skills, or philosophy. Examples include children br
+                        (paediatrics), cancer (oncology), <br /> laboratory medicine (pathology), or primary care (family medicine).</p>
                 </div>
-                <div className="col front-icon">
-                    <span>{Stethoscope}</span>
-                    <h3 className="mt-1">We have experienced Doctor's.</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium dolor emque laudantium. nunc felis.</p>
+                <div className="container my-5">
+                    <Row xs={1} md={3} className="g-5 p-4">
+                        {
+                            doctors.map(doctor => <DoctorsItem key={doctor.id} doctor={doctor}></DoctorsItem>)
+                        }
+                    </Row>
                 </div>
-            </div>
-            <div className="my-5 text-center">
-                <h1 className="fw-bold">Our <span className="text-color">Departments</span></h1>
-                <p>High Quality Medicines at Lowest Rates</p>
-            </div>
-            <div className="container my-5">
-                <Row xs={1} md={3} className="g-5 p-4">
-                    {
-                        departments.map(department => <DepartmentItem key={department.id} department={department}></DepartmentItem>)
-                    }
-                </Row>
             </div>
         </div>
     );
