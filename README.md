@@ -2,14 +2,13 @@
 
 Our Live Website. [City Medicare Clinic](https://city-medicare-clinic.web.app/).
 
-### => We Offer Extensive Medical Services For Our Patients Recommend That You Use Officia.
+### => If the user clicks on the button it will take the user to the service detail page displaying detailed information of the service along with the image of the service.
 
-### => The popular app allows users to ask its team of 35,000 active, U.S.-licensed doctors health-related for free.
+### => Used  private/protected routes. If the user is not logged in, the private route redirects to the login page.
 
-### => Nurses comprise the largest component of most healthcare environments; but there is evidence of international shortages of qualified nurses.
+### => Implement email and password based Authentication. Users can toggle between login and registration view.
 
-### => Specialists are doctors who have advanced training and degrees in a particular branch of medicine, such as heart health or bone health.
+### => If a user wants to view the details of the package, users must login or register first.
 
-### * About Our Clinic
-City Medicare Clinic is located in the heart of the Melbourne CBD. We have been providing quality GP and vaccination services to CBD workers, students and visitors since we opened in 2012. We are currently accepting new patients.
+### => User cannot see the services without register or login
 
